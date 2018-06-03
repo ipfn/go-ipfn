@@ -12,11 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// IPFN command line application.
-package main
+// Package keystore implements cryptographic key store.
+package keystore
 
-import "github.com/ipfn/go-ipfn/commands"
+// RawStorage - Key-value raw storage interface.
+type RawStorage interface {
+	// Get - Gets raw encrypted key.
+	Get(string) ([]byte, error)
+	// Put - Puts raw encrypted key.
+	Put(string, []byte) error
+}
 
-func main() {
-	commands.Execute()
+// Storage - Key-value storage interface.
+type Storage interface {
+	// Get - Gets encrypted key.
+	Get(string) (*EncryptedKey, error)
+	// Put - Puts encrypted key.
+	Put(string, *EncryptedKey) error
 }

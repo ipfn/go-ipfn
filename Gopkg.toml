@@ -27,27 +27,11 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/btcsuite/btcd"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/btcsuite/btcutil"
-
-[[constraint]]
-  branch = "master"
   name = "github.com/crackcomm/viperkeys"
 
 [[constraint]]
   name = "github.com/ethereum/go-ethereum"
   version = "1.8.10"
-
-[[constraint]]
-  name = "github.com/gogo/protobuf"
-  version = "1.0.0"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/ipfn/go-base32check"
 
 [[constraint]]
   branch = "master"
@@ -59,7 +43,15 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/ipfs/go-cid"
+  name = "github.com/ipfn/go-ipfn-crypto"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/ipfn/go-ipfn-keywallet"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/ipfn/go-ipfn-pkhash"
 
 [[constraint]]
   name = "github.com/jbenet/go-base58"
@@ -67,23 +59,11 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/libp2p/go-libp2p-crypto"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-peer"
-
-[[constraint]]
-  branch = "master"
   name = "github.com/mitchellh/go-homedir"
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/multiformats/go-multihash"
-
-[[constraint]]
-  branch = "master"
   name = "github.com/segmentio/go-prompt"
+  version = "1.2.0"
 
 [[constraint]]
   name = "github.com/spf13/cobra"
@@ -93,20 +73,6 @@
   name = "github.com/spf13/viper"
   version = "1.0.2"
 
-[[constraint]]
-  name = "github.com/stretchr/testify"
-  version = "1.2.1"
-
-[[constraint]]
-  branch = "master"
-  name = "golang.org/x/crypto"
-
-[[prune.project]]
-    name = "github.com/ethereum/go-ethereum"
-    non-go = false
-    unused-packages = false
-
 [prune]
-  non-go = true
   go-tests = true
   unused-packages = true

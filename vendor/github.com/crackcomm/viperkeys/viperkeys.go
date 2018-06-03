@@ -39,18 +39,15 @@ func New() *Storage {
 // Get - Gets marshaled encrypted key.
 func (store *Storage) Get(name string) (_ *keystore.EncryptedKey, err error) {
 	data := viper.GetStringMapString(fmt.Sprintf("seeds.%s", name))
-	ciphertext, err := hex.DecodeString(data["ciphertext"])
-	if err != nil {
-		return
-	}
-	if len(ciphertext) == 0 {
-		return
-	}
 	salt, err := hex.DecodeString(data["salt"])
 	if err != nil {
 		return
 	}
 	nonce, err := hex.DecodeString(data["nonce"])
+	if err != nil {
+		return
+	}
+	ciphertext, err := hex.DecodeString(data["ciphertext"])
 	if err != nil {
 		return
 	}

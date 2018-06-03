@@ -65,7 +65,6 @@ func PromptPasswordRepeated(entity string) string {
 }
 
 // PromptConfirmed - Prompts for a value confirmed with function.
-// If function returns `false` when called with value process is repeated.
 func PromptConfirmed(entity string, fn func(string) bool) string {
 	for {
 		value, err := PromptLine(fmt.Sprintf("Choose %s", entity))
