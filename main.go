@@ -15,7 +15,9 @@
 // IPFN command line application.
 package main
 
-import "github.com/ipfn/go-ipfn/commands"
+import (
+	commands "github.com/ipfn/go-ipfn-commands"
+)
 
 func main() {
 	commands.Execute()

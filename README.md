@@ -1,7 +1,7 @@
 # IPFN implementation in Go
 
 [![IPFN project](https://img.shields.io/badge/project-IPFN-blue.svg?style=flat-square)](http://github.com/ipfn)
-[![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn/go?status.svg)](https://godoc.org/github.com/ipfn/go-ipfn/go)
+[![GoDoc](https://godoc.org/github.com/ipfn/ipfn/go?status.svg)](https://godoc.org/github.com/ipfn/ipfn/go)
 [![Circle CI](https://img.shields.io/circleci/project/ipfn/go-ipfn.svg)](https://circleci.com/gh/ipfn/go-ipfn)
 
 Go implementation of IPFN core with command line tool and daemon.
@@ -17,7 +17,7 @@ Go implementation of IPFN core with command line tool and daemon.
 | [keypair](http://github.com/ipfn/go-ipfn-keypair) | Cryptographic Key Pair | [![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn-keypair?status.svg)](https://godoc.org/github.com/ipfn/go-ipfn-keypair) |
 | [keystore](http://github.com/ipfn/go-ipfn-keystore) | Cryptographic Key Store | [![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn-keystore?status.svg)](https://godoc.org/github.com/ipfn/go-ipfn-keystore) |
 | [keywallet](http://github.com/ipfn/go-ipfn-keywallet) | Cryptographic Key Wallet | [![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn-keywallet?status.svg)](https://godoc.org/github.com/ipfn/go-ipfn-keywallet) |
-| [pkhash](http://github.com/ipfn/go-ipfn-pkhash) | Public Key Hash Utilities | [![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn-pkhash?status.svg)](https://godoc.org/github.com/ipfn/go-ipfn/pkhash) |
+| [pkhash](http://github.com/ipfn/go-ipfn-pkhash) | Public Key Hash Utilities | [![GoDoc](https://godoc.org/github.com/ipfn/go-ipfn-pkhash?status.svg)](https://godoc.org/github.com/ipfn/ipfn/pkhash) |
 
 ## License
 
